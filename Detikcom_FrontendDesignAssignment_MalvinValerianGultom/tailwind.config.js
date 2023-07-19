@@ -25,14 +25,11 @@ module.exports = {
       },
       backgroundImage: {
         "detik-hero-image": "url('./img/hero-image.png')",
-        "detik-mechanism-image": "url('./img/mechanism-bg.png')"
+        "detik-mechanism-image": "url('./img/mechanism-bg.png')",
       },
       margin: {
         "detik-hero-6rem": "2rem"
       },
-      width: {
-        "detik-company-width": "5000px"
-      }
     },
   },
   plugins: [],
