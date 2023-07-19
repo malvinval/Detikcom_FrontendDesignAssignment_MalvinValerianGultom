@@ -928,6 +928,10 @@ video {
   padding-right: 0.5rem;
 }
 
+.pl-0 {
+  padding-left: 0px;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1210,6 +1214,10 @@ video {
 
   .lg\:pr-7 {
     padding-right: 1.75rem;
+  }
+
+  .lg\:pl-4 {
+    padding-left: 1rem;
   }
 
   .lg\:text-left {
