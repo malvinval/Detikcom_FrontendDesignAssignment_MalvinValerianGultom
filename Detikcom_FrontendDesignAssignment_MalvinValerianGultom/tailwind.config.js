@@ -4,7 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "detik-blue": "#007CBD"
+        "detik-blue": "#007CBD",
+        "detik-milk": "#F4FBFF",
+        "detik-light-blue": "#3EB7DD"
       },
       fontFamily: {
         "poppins": ['Poppins', 'sans-serif'],
@@ -27,6 +29,9 @@ module.exports = {
       },
       margin: {
         "detik-hero-6rem": "2rem"
+      },
+      width: {
+        "detik-company-width": "5000px"
       }
     },
   },
