@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  class="scroll-smooth" lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
 
 </head>
 <body>
@@ -22,12 +22,14 @@
         <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2">
             <div class="px-2 flex flex-col justify-between">
                 <div>
-                    <p class="font-poppins text-white font-bold-400">detikfinance</p>
+                    <a href="#hero" class="font-poppins text-white font-bold-400">detikfinance</a>
                 </div>
                 <div>
-                    <h3 class="text-xl md:text-3xl font-montserrat text-white font-bold-900">BUSINESS PLAN</h3>
+                    <a href="#hero" class="text-xl md:text-3xl font-montserrat text-white font-bold-900">BUSINESS PLAN</a>
                 </div>
-                <div class="font-manrope text-white tracking-widest">COMPETITION 2023</div>
+                <div class="font-manrope text-white tracking-widest">
+                    <a href="#hero">COMPETITION 2023</a>
+                </div>
             </div>
 
             <button id="toggleButton" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
@@ -40,7 +42,7 @@
             <div class="hidden w-full md:block md:w-auto" id="navbar-default">
               <ul class="font-poppins md:items-center font-medium flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
                 <li>
-                  <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:p-0">About</a>
+                  <a href="#about" class="block py-2 pl-3 pr-4 text-white rounded md:p-0">About</a>
                 </li>
                 <li>
                   <a href="#" class="block py-2 pl-3 pr-4 text-white rounded md:border-0 md:p-0">Mechanism</a>
@@ -58,13 +60,13 @@
     <!-- END NAVBAR -->
 
     <!-- START HERO SECTION -->
-    <div class="bg-detik-hero-image bg-no-repeat bg-cover bg-center h-screen w-full flex items-center">
+    <div id="hero" class="bg-detik-hero-image bg-no-repeat bg-cover bg-center h-screen w-full flex items-center">
         <div class="hero-text-container w-full flex flex-col justify-center items-center">
             <div class="text-center px-5 pb-4">
                 <h5 class="text-white font-manrope font-bold-600 text-xs md:text-2xl tracking-wider">Detikfinance Business Plan Competition 2023</h5>
             </div>
             <div class="text-center px-5 pb-4">
-                <p class="text-white font-montserrat text-xl md:text-6xl">EMPOWERING INDONESIA STARTUP</p>
+                <p class="text-white font-montserrat font-bold-900 text-xl md:text-6xl">EMPOWERING INDONESIA STARTUP</p>
             </div>
             <div class="text-center px-5 lg:w-1/2">
                 <p class="font-poppins text-white text-xs md:text-base font-bold-600">Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor</p>
@@ -74,8 +76,42 @@
     <!-- END HERO SECTION -->
 
     <!-- START ABOUT SECTION -->
-    <div class="w-full h-96"></div>
+    <div id="about" class="w-full flex justify-center items-center">
+        <div class="w-3/4 my-20 lg:my-40 about-container flex flex-col lg:flex-row justify-center items-center">
+            <div class="flex w-full justify-center lg:justify-end flex-shrink-0 lg:w-5/12 pr-0 lg:pr-4 text-justify">
+                <iframe width="540" height="260" src="https://www.youtube.com/embed/v8cVKTL2pGk" title="Sejarah Singkat detikcom 2017" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            <div class="mt-10 lg:mt-0 flex flex-col flex-grow pl-4">
+                <div class="pb-5">
+                    <h3 class="text-detik-blue text-center lg:text-left font-montserrat text-xl font-bold-700">
+                        About Detikfinance Business Plan Competition 2023
+                    </h3>
+                </div>
+                <div class="pb-5">
+                    <h3 class="text-black text-justify lg:text-left font-montserrat font-bold-500">
+                        Detikfinance kali ini akan memberikan ruang bagi startup untuk networking dan memamerkan produk inovasinya di hadapan venture capital dan angel investor. Acara ini juga akan menghadirkan para pengembang teknologi dan pelaku bisnis untuk memberikan edukasi dan inspirasi bagi masyarakat Indonesia dan teknofilia mengenai perkembangan teknologi di Indonesia.
+                    </h3>
+                </div>
+                <div class="flex items-center">
+                    <div class="font-montserrat text-detik-blue mr-4">Share</div>
+                    <div class="mx-2">
+                        <!-- twitter icon -->
+                        <img src="../dist/img/twitter.webp" class="h-6 lg:h-8" alt="twitter">
+                    </div>
+                    <div class="mx-2">
+                        <!-- whatsapp icon -->
+                        <img src="../dist/img/whatsapp.png" class="h-6 lg:h-8" alt="whatsapp">
+                    </div>
+                    <div class="mx-2">
+                        <!-- facebook icon -->
+                        <img src="../dist/img/facebook.png" class="h-9 lg:h-11" alt="facebook">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- END ABOUT SECTION -->
+
 </body>
 <script>
     // select button and navbar element

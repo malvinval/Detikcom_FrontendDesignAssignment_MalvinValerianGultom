@@ -13,8 +13,10 @@ module.exports = {
       },
       fontWeight: {
         "bold-400": "400",
+        "bold-500": "500",
         "bold-900": "900",
-        "bold-600": "600"
+        "bold-600": "600",
+        "bold-700": "700"
       },
       borderRadius: {
         "half": "50px"
