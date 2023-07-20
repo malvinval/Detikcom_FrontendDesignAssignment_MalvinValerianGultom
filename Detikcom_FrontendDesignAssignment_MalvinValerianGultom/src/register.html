@@ -13,6 +13,26 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <style>
+        #fullname::placeholder,
+        #email::placeholder,
+        #phone::placeholder,
+        #tentang-perusahaan::placeholder,
+        #website::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+            color: #071424;
+            opacity: 1; /* Firefox */
+        }
+
+        #tentang-perusahaan {
+            resize: none;
+        }
+
+        /* Hide the default file input button */
+        .custom-file-input input[type="file"] {
+            display: none;
+        }
+    </style>
 </head>
 <body>
     <!-- START NAVBAR -->
@@ -59,10 +79,105 @@
     <!-- END NAVBAR -->
 
     <!-- START HEADING SECTION -->
-    <div id="heading-section" class="bg-detik-register-heading bg-no-repeat bg-cover bg-center h-96">
-
+    <div id="heading-section" class="flex justify-center items-center bg-detik-register-heading bg-no-repeat bg-cover bg-center h-52 lg:h-96">
+        <h1 class="font-montserrat font-bold-700 text-3xl lg:text-5xl text-white">Registrasi</h1>
     </div>
     <!-- END HEADING SECTION -->
+
+    <!-- START FORM SECTION -->
+    <div id="registration-form-container" class="flex justify-center mb-28">
+        <div id="registration-form" class="w-full lg:w-1/2 bg-white shadow-lg px-5 py-8 rounded-lg lg:-mt-28">
+            <input autocomplete="off" class="bg-gray-100 text-sm rounded-lg w-full p-3 mb-8 font-montserrat text-black" type="text" name="fullname" id="fullname" placeholder="Nama Perusahaan">
+            <input autocomplete="off" class="bg-gray-100 text-sm rounded-lg w-full p-3 mb-8 font-montserrat text-black" type="email" name="email" id="email" placeholder="Email">
+            <input autocomplete="off" class="bg-gray-100 text-sm rounded-lg w-full p-3 font-montserrat text-black" type="tel" name="phone" id="phone" placeholder="Nomor Telepon">
+            <p class="text-gray-400 font-light font-montserrat mt-2 mb-8 text-sm">Isi hanya angka</p>
+            <textarea class="bg-gray-100 rounded-lg w-full p-3 mb-8 font-montserrat text-sm text-black" placeholder="Tentang Perusahaan (Max. 200 character)*" name="tentang-perusahaan" id="tentang-perusahaan" cols="30" rows="10"></textarea>
+            
+            <div id="file-form" class="flex md:flex-row flex-col mb-8">
+                <div id="file-btn-container" class="flex flex-shrink-0 w-full md:w-5/12 text-transparent custom-file-input">
+                    <input type="file" id="fileInput" />
+                    <label for="fileInput" class="bg-gray-100 flex flex-col rounded-lg justify-between items-center p-6 cursor-pointer w-full">
+                        <span></span>
+                        <img class="w-10 my-20" src="../dist/img/file-upload.svg" alt="">
+                        <p class="text-black font-montserrat text-sm">Upload file logo*</p>
+                    </label>
+                </div>
+                <div id="file-requirement-container" class="flex flex-grow flex-col items-start justify-center font-montserrat text-sm mt-3 md:mt-0 pl-0 md:pl-5">
+                    <p>1. Format file: .png, .jpg, .jpeg</p>
+                    <p>2. Maksimal ukuran file 200KB</p>
+                    <p>3. Hindari penggunaan logo berwarna putih</p>
+                    <p>4. Minimal lebar 300px</p>
+                </div>
+            </div>
+
+            <div id="file-form-2" class="flex flex-col md:flex-row">
+                <div class="flex flex-grow text-transparent custom-file-input">
+                    <input type="file" id="fileInput" />
+                    <label for="fileInput" class="bg-gray-100 w-full p-3 rounded-l-lg">
+                        <p class="text-black font-montserrat text-sm">Profil Perusahaan atau Deck (opsional)</p>
+                    </label>
+                </div>
+                <div class="flex flex-shrink-0 w-4/12 flex-col items-start justify-center font-montserrat text-sm">
+                    <button class="bg-detik-blue mt-2 md:mt-0 w-full py-3 text-white font-montserrat font-bold-600 rounded-lg">
+                        Upload file
+                    </button>
+                </div>
+            </div>
+            <p class="text-gray-400 font-light font-montserrat mt-2 mb-8 text-sm">Format file .pdf , maksimal size 20mb</p>
+            
+            <input autocomplete="off" class="bg-gray-100 text-sm rounded-lg w-full p-3 font-montserrat text-black" type="text" name="website" id="website" placeholder="Link website">
+            <p class="text-gray-400 font-light font-montserrat mt-2 mb-8 text-sm">Website, Sosial Media, dll. Sertakan protokol URL (https:// atau http://).</p>
+            
+            <div id="agree-button">
+                <div class="flex items-center mb-4">
+                    <input id="default-checkbox" type="checkbox" value="" class="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600">
+                    <label for="default-checkbox" class="ml-2 text-sm font-montserrat">Dengan menekan tombol "Daftar", Saya menyetujui syarat dan ketentuan yang berlaku</label>
+                </div>
+            </div>
+            <div class="flex justify-center mt-5">
+                <button class="bg-detik-blue px-24 rounded-lg py-3 text-white font-montserrat font-bold-600">Register</button>
+            </div>
+        </div>
+
+    </div>
+    <!-- END FORM SECTION -->
+
+    <div id="footer" class="bg-detik-blue px-14 py-8">
+        <div class="flex flex-col justify-between mb-8">
+            <div>
+                <a href="#hero" class="font-poppins text-white font-bold-400">detikfinance</a>
+            </div>
+            <div>
+                <a href="#hero" class="text-xl md:text-3xl font-montserrat text-white font-bold-900">BUSINESS PLAN</a>
+            </div>
+            <div class="font-manrope text-white tracking-widest">
+                <a href="#hero">COMPETITION 2023</a>
+            </div>
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between item-center">
+            <div class="w-full lg:w-1/2">
+                <p class="text-white text-justify lg:text-left font-montserrat font-bold-600 text-base">
+                    Detikfinance memberikan ruang kepada para startup di Indonesia untuk menunjukkan, serta mempromosikan brand mereka untuk mendapatkan perhatian dari venture capital atau angel investor
+                </p>
+            </div>
+
+            <div class="flex justify-start lg:justify-end mt-10 lg:mt-0 items-center">
+                <svg width="30" height="31" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.5 21C4.97715 21 0.5 16.5228 0.5 11C0.5 5.47715 4.97715 1 10.5 1C16.0228 1 20.5 5.47715 20.5 11C20.5 16.5228 16.0228 21 10.5 21ZM10.5 21V9C10.5 7.89543 11.3954 7 12.5 7H14M7 13H14" stroke="#F2F2F2"/>
+                </svg>
+                <svg class="ml-5" width="30" height="31" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M16 6H17M4.5 1H16.5C18.7091 1 20.5 2.79086 20.5 5V17C20.5 19.2091 18.7091 21 16.5 21H4.5C2.29086 21 0.5 19.2091 0.5 17V5C0.5 2.79086 2.29086 1 4.5 1ZM10.5 15C8.29086 15 6.5 13.2091 6.5 11C6.5 8.79086 8.29086 7 10.5 7C12.7091 7 14.5 8.79086 14.5 11C14.5 13.2091 12.7091 15 10.5 15Z" stroke="#F2F2F2"/>
+                </svg>
+                <svg class="ml-5" width="30" height="31" viewBox="0 0 21 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M20.4691 2.5L20.968 2.46692C20.9547 2.26635 20.8226 2.09324 20.6327 2.0275C20.4427 1.96176 20.2319 2.01616 20.0974 2.1656L20.4691 2.5ZM19.5428 6.72701C19.5428 6.45086 19.3189 6.22701 19.0428 6.22701C18.7666 6.22701 18.5428 6.45086 18.5428 6.72701H19.5428ZM10.5 8V8.5H11V8H10.5ZM1.92637 2.5L2.39462 2.32468C2.32485 2.13834 2.15124 2.0111 1.95255 2.00069C1.75385 1.99027 1.56789 2.09865 1.47902 2.27667L1.92637 2.5ZM7.5 15.5L7.85383 15.8533C7.97619 15.7307 8.02642 15.5536 7.98661 15.385C7.94679 15.2165 7.8226 15.0806 7.65833 15.0257L7.5 15.5ZM0.5 18.2143V17.7143C0.279732 17.7143 0.0854109 17.8584 0.0215057 18.0692C-0.0423996 18.28 0.0391667 18.5078 0.222353 18.6301L0.5 18.2143ZM17.9515 3.89054L17.5806 4.22589L17.7608 4.42513L18.0264 4.38491L17.9515 3.89054ZM19.9702 2.53308C20.0446 3.65499 19.9783 4.36395 19.7838 4.91243C19.5929 5.45047 19.2609 5.88419 18.6968 6.4247L19.3887 7.14673C20.0033 6.5578 20.4605 5.9957 20.7262 5.24676C20.9882 4.50827 21.0458 3.63909 20.968 2.46692L19.9702 2.53308ZM19.5428 7.76785V6.78571H18.5428V7.76785H19.5428ZM19.5428 6.78571V6.72701H18.5428V6.78571H19.5428ZM10 7V8H11V7H10ZM14.8223 2C12.125 2 10 4.35065 10 7H11C11 4.85063 12.7282 3 14.8223 3V2ZM18.5428 7.76785C18.5428 14.0599 13.2624 19.5 7 19.5V20.5C13.8342 20.5 19.5428 14.5925 19.5428 7.76785H18.5428ZM1.45811 2.67532C2.22305 4.7183 5.10161 8.5 10.5 8.5V7.5C5.62855 7.5 3.05605 4.09122 2.39462 2.32468L1.45811 2.67532ZM1.47902 2.27667C0.00554863 5.22816 -0.242404 8.09715 0.775073 10.5321C1.79256 12.967 4.03467 14.8702 7.34167 15.9743L7.65833 15.0257C4.54668 13.9869 2.57561 12.2473 1.69776 10.1465C0.819895 8.04571 0.994452 5.48613 2.37372 2.72333L1.47902 2.27667ZM7.14617 15.1467C6.26646 16.0278 3.76165 17.7143 0.5 17.7143V18.7143C4.08491 18.7143 6.83174 16.877 7.85383 15.8533L7.14617 15.1467ZM18.3224 3.5552C17.4594 2.60084 16.2107 2 14.8223 2V3C15.916 3 16.8991 3.47214 17.5806 4.22589L18.3224 3.5552ZM18.0264 4.38491C19.0619 4.22808 20.0775 3.68292 20.8409 2.8344L20.0974 2.1656C19.4829 2.84872 18.6743 3.27537 17.8766 3.39618L18.0264 4.38491ZM0.222353 18.6301C2.47016 20.131 4.63313 20.5 7 20.5V19.5C4.75713 19.5 2.80895 19.1548 0.777647 17.7985L0.222353 18.6301Z" fill="#F2F2F2"/>
+                </svg>
+            </div>
+
+        </div>
+        <hr class="my-7 text-white" />
+        <p class="font-montserrat text-white text-base">© 2023 Detikcom. All rights reserved</p>
+    </div>
+    <!-- END FOOTER SECTION -->
 </body>
 
 <script>
