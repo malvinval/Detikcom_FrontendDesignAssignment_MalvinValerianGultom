@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html  class="scroll-smooth" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>detikFinance | Malvin Valerian</title>
+    <link href="../dist/output.css" rel="stylesheet">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- START NAVBAR -->
+    <div class="navbar-back mb-detik-hero-6rem"></div>
+    <nav class="fixed top-0 left-0 right-0 bg-detik-blue border-gray-200 dark:bg-gray-900 z-10">
+        <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto py-2">
+            <div class="px-2 flex flex-col justify-between">
+                <div>
+                    <a href="#hero" class="font-poppins text-white font-bold-400">detikfinance</a>
+                </div>
+                <div>
+                    <a href="#hero" class="text-xl md:text-3xl font-montserrat text-white font-bold-900">BUSINESS PLAN</a>
+                </div>
+                <div class="font-manrope text-white tracking-widest">
+                    <a href="#hero">COMPETITION 2023</a>
+                </div>
+            </div>
+
+            <button id="toggleButton" data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-white rounded-lg md:hidden focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+                <span class="sr-only">Open main menu</span>
+                <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+                </svg>
+            </button>
+
+            <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+              <ul class="font-poppins md:items-center font-medium flex flex-col p-4 mt-4 md:flex-row md:space-x-8 md:mt-0 md:border-0">
+                <li>
+                  <a href="#about" class="block py-2 pl-3 pr-4 text-white rounded md:p-0">About</a>
+                </li>
+                <li>
+                  <a href="#mechanism" class="block py-2 pl-3 pr-4 text-white rounded md:border-0 md:p-0">Mechanism</a>
+                </li>
+                <li>
+                  <a href="#latest-update" class="block py-2 pl-3 pr-4 text-white rounded md:border-0 md:p-0">Latest Update</a>
+                </li>
+                <li class="mt-5 ml-3 md:mt-0 md:ml-0">
+                  <a href="register.html" class="bg-white py-2 pl-3 pr-4 text-detik-blue rounded-half md:border-0">Register</a>
+                </li>
+              </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+</body>
+
+    <script>
+        // select button and navbar element
+        const toggleButton = document.getElementById("toggleButton");
+        const navbar = document.getElementById("navbar-default");
+
+        // add event listener to the button
+        toggleButton.addEventListener("click", () => {
+            // toggle the 'hidden' class to show/hide the navbar
+            navbar.classList.toggle("hidden");
+        });
+    </script>
+</html>
