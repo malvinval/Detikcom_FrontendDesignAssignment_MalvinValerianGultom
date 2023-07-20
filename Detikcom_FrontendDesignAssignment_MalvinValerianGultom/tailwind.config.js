@@ -26,6 +26,7 @@ module.exports = {
       backgroundImage: {
         "detik-hero-image": "url('./img/hero-image.png')",
         "detik-mechanism-image": "url('./img/mechanism-bg.png')",
+        "detik-register-heading": "url('./img/register-heading.png')"
       },
       margin: {
         "detik-hero-6rem": "2rem"
