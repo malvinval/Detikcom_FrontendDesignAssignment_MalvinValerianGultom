@@ -6,6 +6,10 @@ Untuk melihat hasil keseluruhan tampilan website yang sudah jadi, silahkan insta
 
 - Untuk melihat slicing HTML, silahkan buka folder **/slicing**, lalu buka file HTML yang diinginkan di web browser.
 
+## Light mode vs Dark mode
+
+Sesuai dengan design di figma, website ini dirancang lebih baik untuk tampilan browser dengan mode light (terang).
+
 ## Instalasi
 
 1. **Clone repositori ini**
