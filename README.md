@@ -1,3 +1,7 @@
+# CDN Support
+
+Project ini dapat langsung dijalankan tanpa diinstall dengan package manager seperti npm, karena saya sudah menyertakan link CDN TailwindCSS. 
+
 ## Struktur folder
 
 Untuk melihat hasil keseluruhan tampilan website yang sudah jadi, silahkan install dan jalankan project ini.
